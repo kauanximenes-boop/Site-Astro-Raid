@@ -192,3 +192,69 @@ nav a::after {
 nav a.active::after {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 10px 0;
+  }
+
+  .header-top {
+    width: 95%;
+  }
+
+  .titulo {
+    font-size: 22px;
+  }
+
+  .botao-jogar-header {
+    padding: 6px 12px;
+    font-size: 12px;
+    right: 10px;
+    transform: translateY(-20%);
+  }
+
+  nav {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .botao-jogar {
+    font-size: 18px;
+    padding: 15px 25px;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .historia p,
+  .sobre p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .imagens-jogo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slot-imagem {
+    width: 90%;
+    height: 200px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 20px;
+  }
+}
