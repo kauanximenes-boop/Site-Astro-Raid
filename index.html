@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Astro Raid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="titulo">Astro Raid</div>
+    <button class="botao-jogar-header">JOGAR</button>
+  </div>
+
+  <div class="divisor"></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre o jogo</a>
+    <a href="#historia">História</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <button class="botao-jogar">JOGAR</button>
+</section>
+
+<section id="sobre" class="sobre">
+  <h2>Sobre o Jogo</h2>
+  <p>
+    Astro Raid é um jogo de tiro espacial focado em partidas rápidas. O jogador controla uma nave e enfrenta ondas de inimigos, buscando sobreviver, acumular pontos e bater recordes. O jogo prioriza ação imediata, progressão rápida e objetivos claros, ideal para sessões curtas de gameplay.
+  </p>
+
+  <div class="imagens-jogo">
+    <div class="slot-imagem">
+      <img src="" alt="">
+    </div>
+    <div class="slot-imagem">
+      <img src="" alt="">
+    </div>
+  </div>
+</section>
+
+<section id="historia" class="historia">
+  <h2>História</h2>
+  <p>
+    Após anos de paz, uma força desconhecida surge no espaço, atacando colônias humanas e destruindo tudo em seu caminho. Sem tempo para estratégias complexas, a defesa depende de pilotos solitários que entram em combate imediato.<br><br>
+    Você é um desses pilotos. Sua missão é simples: avançar, destruir as ondas inimigas e impedir que a ameaça se espalhe.<br><br>
+    A cada batalha, as forças inimigas ficam mais fortes, mas você também evolui. No fim, não se trata apenas de sobreviver… mas de resistir o máximo possível e proteger o que restou da humanidade.
+  </p>
+</section>
+
+<footer>
+  <p>Contato: kauan.ximenes@grupointegrado.com</p>
+  <p>© 2026 Astro Raid</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(a => {
+    a.classList.remove("active");
+    if (a.getAttribute("href") === "#" + current) {
+      a.classList.add("active");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
