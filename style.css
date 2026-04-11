@@ -31,6 +31,18 @@ header {
   position: relative;
 }
 
+.logo-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-20%);
+}
+
+.logo {
+  width: 50px;
+}
+
+
 .titulo {
   font-size: 28px;
   font-weight: bold;
