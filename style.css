@@ -225,87 +225,117 @@ footer {
   padding: 30px;
 }
 
-@media (max-width: 768px) {
+.controles {
+  margin-top: 90px;
+}
+
+.controle-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 700px;
+}
+
+.controle-item img {
+  width: 120px;
+  height: auto;
+  margin-left: 150px;
+}
+
+.controle-item p {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.mouse-icon {
+  margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+
   header {
     padding: 10px 0;
-  }
-
-  .header-top {
-    flex-direction: column;
-    gap: 15px;
-    width: 95%;
-  }
-
-  .logo-container, .botao-jogar-header {
-    position: static;
-    transform: none;
-    text-align: center;
-  }
-
-  .logo {
-    width: 60px;
   }
 
   .titulo {
     font-size: 20px;
   }
 
+  .logo {
+    width: 50px;
+  }
+
   .botao-jogar-header {
-    width: 80%;
-    padding: 12px;
+    padding: 6px 12px;
+    font-size: 12px;
   }
 
   nav {
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 5px;
   }
 
   nav a {
-    font-size: 14px;
-    padding: 8px;
+    font-size: 12px;
+    padding: 3px 6px;
   }
 
   .hero {
-    height: 70vh;
-    padding-top: 180px;
+    padding-top: 80px;
+    text-align: center;
   }
 
   .botao-jogar {
     font-size: 18px;
-    padding: 15px 30px;
+    padding: 12px 24px;
   }
 
   section {
-    padding: 60px 20px;
+    padding: 80px 20px;
   }
 
-  .historia p, .persona p {
+  .historia p,
+  .persona p {
     text-align: justify;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .imagens-jogo {
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
 
-  .slot-imagem, .persona .slot-imagem {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+  .slot-imagem {
+    width: 90%;
+    height: 180px;
+  }
+
+  .persona .slot-imagem {
+    width: 90%;
+    height: 200px;
+  }
+
+  .controle-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .controle-item img {
+    margin-left: 0;
+    width: 80px;
+  }
+
+  .controle-item p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .mouse-icon {
+    margin-top: 20px;
   }
 
   .divisor {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .titulo {
-    font-size: 18px;
-  }
-  
-  nav a {
-    font-size: 12px;
+    width: 80%;
   }
 }
